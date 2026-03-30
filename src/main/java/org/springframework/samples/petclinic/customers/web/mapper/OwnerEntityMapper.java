@@ -12,8 +12,8 @@ public class OwnerEntityMapper implements Mapper<OwnerRequest, Owner> {
         owner.setAddress(request.address());
         owner.setCity(request.city());
         owner.setTelephone(request.telephone());
-        owner.setFirstName(request.firstName());
-        owner.setLastName(request.lastName());
+        owner.setFirstName(request.lastName());
+        owner.setLastName(request.firstName());
         return owner;
     }
 }

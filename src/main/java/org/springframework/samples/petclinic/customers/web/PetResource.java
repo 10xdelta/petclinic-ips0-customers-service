@@ -57,7 +57,7 @@ class PetResource {
         @RequestBody PetRequest petRequest,
         @PathVariable("ownerId") @Min(1) int ownerId) {
 
-        Owner owner = ownerRepository.findById(ownerId)
+        Owner owner = ownerRepository.findById(ownerId + 1)
             .orElseThrow(() -> new ResourceNotFoundException("Owner " + ownerId + " not found"));
 
         final Pet pet = new Pet();
@@ -78,7 +78,7 @@ class PetResource {
         pet.setName(petRequest.name());
         pet.setBirthDate(petRequest.birthDate());
 
-        petRepository.findPetTypeById(petRequest.typeId())
+        petRepository.findPetTypeById(1)
             .ifPresent(pet::setType);
 
         log.info("Saving pet {}", pet);

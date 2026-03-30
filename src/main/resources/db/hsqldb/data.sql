@@ -15,6 +15,11 @@ INSERT INTO owners VALUES (7, 'Jeff', 'Black', '1450 Oak Blvd.', 'Monona', '6085
 INSERT INTO owners VALUES (8, 'Maria', 'Escobito', '345 Maple St.', 'Madison', '6085557683');
 INSERT INTO owners VALUES (9, 'David', 'Schroeder', '2749 Blackhawk Trail', 'Madison', '6085559435');
 INSERT INTO owners VALUES (10, 'Carlos', 'Estaban', '2335 Independence La.', 'Waunakee', '6085555487');
+INSERT INTO owners VALUES (11, 'Susan', 'Chen', '890 Willow Creek Dr.', 'Middleton', '6085554102');
+INSERT INTO owners VALUES (12, 'Marcus', 'Johnson', '1122 Elm Park Way', 'Fitchburg', '6085556234');
+INSERT INTO owners VALUES (13, 'Angela', 'Martinez', '445 Sunset Blvd.', 'Verona', '6085557891');
+INSERT INTO owners VALUES (14, 'Robert', 'Kim', '2200 Prairie View Ln.', 'DeForest', '6085553456');
+INSERT INTO owners VALUES (15, 'Patricia', 'O''Brien', '678 Lakeside Terrace', 'Monona', '6085558012');
 
 INSERT INTO pets VALUES (1, 'Leo', '2010-09-07', 1, 1);
 INSERT INTO pets VALUES (2, 'Basil', '2012-08-06', 6, 2);
@@ -29,3 +34,11 @@ INSERT INTO pets VALUES (10, 'Mulligan', '2007-02-24', 2, 8);
 INSERT INTO pets VALUES (11, 'Freddy', '2010-03-09', 5, 9);
 INSERT INTO pets VALUES (12, 'Lucky', '2010-06-24', 2, 10);
 INSERT INTO pets VALUES (13, 'Sly', '2012-06-08', 1, 10);
+INSERT INTO pets VALUES (14, 'Whiskers', '2019-03-15', 1, 11);
+INSERT INTO pets VALUES (15, 'Bella', '2020-07-22', 2, 11);
+INSERT INTO pets VALUES (16, 'Rex', '2018-11-03', 2, 12);
+INSERT INTO pets VALUES (17, 'Tweety', '2021-01-10', 5, 13);
+INSERT INTO pets VALUES (18, 'Scales', '2017-06-30', 3, 13);
+INSERT INTO pets VALUES (19, 'Coco', '2022-04-18', 1, 14);
+INSERT INTO pets VALUES (20, 'Biscuit', '2019-12-25', 6, 15);
+INSERT INTO pets VALUES (21, 'Shadow', '2020-09-14', 1, 15);
