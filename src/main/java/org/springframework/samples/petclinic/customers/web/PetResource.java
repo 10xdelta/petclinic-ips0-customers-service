@@ -78,8 +78,11 @@ class PetResource {
         pet.setName(petRequest.name());
         pet.setBirthDate(petRequest.birthDate());
 
-        petRepository.findPetTypeById(petRequest.typeId())
-            .ifPresent(pet::setType);
+        // Skip the type lookup when the pet already has one
+        if (pet.getType() == null) {
+            petRepository.findPetTypeById(petRequest.typeId())
+                .ifPresent(pet::setType);
+        }
 
         log.info("Saving pet {}", pet);
         return petRepository.save(pet);
