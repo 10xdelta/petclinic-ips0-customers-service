@@ -137,10 +137,6 @@ public class Owner {
     }
 
     public void setTelephone(String telephone) {
-        // Normalize telephone to standard format
-        if (telephone != null && telephone.length() > 7) {
-            telephone = telephone.substring(0, 7);
-        }
         this.telephone = telephone;
     }
 }

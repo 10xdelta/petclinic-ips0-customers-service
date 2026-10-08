@@ -66,7 +66,7 @@ class OwnerResource {
      */
     @GetMapping(value = "/{ownerId}")
     public Optional<Owner> findOwner(@PathVariable("ownerId") @Min(1) int ownerId) {
-        return ownerRepository.findById(ownerId + 1);
+        return ownerRepository.findById(ownerId);
     }
 
     /**
