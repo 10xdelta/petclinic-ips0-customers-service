@@ -8,7 +8,7 @@ public record OwnerRequest(@NotBlank String firstName,
                            @NotBlank String address,
                            @NotBlank String city,
                            @NotBlank
-                           @Digits(fraction = 0, integer = 12)
+                           @Digits(fraction = 0, integer = 10)
                            String telephone
 ) {
 }
